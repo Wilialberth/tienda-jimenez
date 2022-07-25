@@ -1,6 +1,7 @@
 .articulo{
     display: block;
     width: 300px;
+    
 }
 
 .info__image{
@@ -17,5 +18,5 @@
     
 }
 .title{
-    text-decoration: none;
+    text-decoration: none;    
 }

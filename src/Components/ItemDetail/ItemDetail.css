@@ -1,6 +1,8 @@
 .container{
     width: 90%;
     margin: auto;
+    
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -15,6 +17,8 @@
     width:100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .detail__image{
@@ -23,6 +27,8 @@
 
 .content{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {

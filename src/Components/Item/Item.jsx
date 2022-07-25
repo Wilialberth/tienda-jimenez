@@ -6,7 +6,7 @@ const Item = ({info}) => {
   return (
     <>
     <Link to={`/detalle/${info.id}`} className='articulo' >
-        <img className='info__image' src={info.image} alt="" />
+        <img className='info__image' src={info.image} alt="Info de imagen" />
         <p className='title' >{info.name}</p>
     </Link>
     
