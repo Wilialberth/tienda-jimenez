@@ -1,0 +1,21 @@
+.articulo{
+    display: block;
+    width: 300px;
+}
+
+.info__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+    background-color: #7eb7c9;
+    list-style: none;
+    justify-content: center;
+    margin-top: 15px;
+    width: 75%;
+    flex-direction: column;
+    
+}
+.title{
+    text-decoration: none;
+}
