@@ -1,6 +1,10 @@
 import React from 'react'
 
-const CartWidget = () => {
+
+export const CartWidget = () => {
+  
+
+
   return (
     <>
       <span className="material-symbols-outlined" >
