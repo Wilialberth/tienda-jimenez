@@ -3,7 +3,7 @@ import { useCartContext } from '../../Context/CartContext'
 import { Link } from 'react-router-dom';
 import ItemCart from '../ItemCart/ItemCart';
 import "./Cart.css"
-import { addDoc, collection, getFirestore } from "firebase/firestore"
+import { addDoc, collection, doc, getFirestore, serverTimestamp, updateDoc } from "firebase/firestore"
 
 const Cart = () => {
 
@@ -14,6 +14,7 @@ const Cart = () => {
       name: 'Wilialberth Jimenez',
       email: '7jimenez.w@gmail.com',
       phone: '351-7710165',
+      date: 'serverTimestamp()',
     },
     item: cart.map(product =>({id: product.id, name: product.name, precio: product.precio, quantity: product.quantity})),
     total: totalPrice(),
@@ -27,6 +28,12 @@ const Cart = () => {
       .then(({ id })  => console.log(id));
 
   }
+
+  product.Cart.forEach ((product) =>{
+    const upDateCollection = doc(db, "productos, product.id")
+    updateDoc(upDateCollection, {stock: product.stock - product.quantity})
+    
+  })
 
   if (cart.length === 0) {
     return(
