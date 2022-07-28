@@ -27,13 +27,10 @@ const Cart = () => {
       addDoc(ordersCollection, order)
       .then(({ id })  => console.log(id));
 
+     
   }
 
-  product.Cart.forEach ((product) =>{
-    const upDateCollection = doc(db, "productos, product.id")
-    updateDoc(upDateCollection, {stock: product.stock - product.quantity})
-    
-  })
+ 
 
   if (cart.length === 0) {
     return(
