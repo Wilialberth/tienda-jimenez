@@ -1,6 +1,15 @@
 .articulo{
     display: block;
     width: 300px;
+    margin: 0.5rem;
+    /* flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+   /*  height:auto;
+position:relative;
+display:inline-block;
+vertical-align:top;
+overflow:hidden; */
     
 }
 
@@ -17,6 +26,6 @@
     flex-direction: column;
     
 }
-.title{
-    text-decoration: none;    
+p{
+    margin: 00.5rem;
 }

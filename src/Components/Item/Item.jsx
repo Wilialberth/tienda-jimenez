@@ -9,10 +9,9 @@ const Item = ({info}) => {
   return (
     <>
     <Link to={`/detalle/${info.id}`} className='articulo' >
-        <img className='info__image' src={info.image} alt="Info de imagen" />
-        
+    <img className='info__image' src={info.image} alt="Info de imagen" />
     </Link>
-    <p className='title' >{info.name}</p>
+    <p>{info.name}</p>
     <p> {info.description} </p>
     <p> ${info.precio} </p>
     
