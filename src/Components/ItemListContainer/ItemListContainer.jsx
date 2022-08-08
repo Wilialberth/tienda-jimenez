@@ -1,12 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import Title from '../Title/Title'
+
 import ItemList from '../ItemList/ItemList';
 import { useParams } from "react-router-dom"
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore"
-
-
-
-
 
 
 
@@ -35,7 +31,7 @@ const ItemListContainer = ({greeting}) => {
     
   return (
     <>
-    {/* <Title greeting='Tienda' /> */}
+    
     <span> {greeting} </span>
     <ItemList data = {data} />
     </>

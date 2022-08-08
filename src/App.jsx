@@ -5,12 +5,14 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
 import Cart from './Components/Cart/Cart'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import CartProvider from './Context/CartContext'
+import CartProvider from './Context/CartContext';
+
+
 
 
 const App = () => {
   const greeting = "Bienvenidos a mi tienda."
-
+ 
 
   return (
     <>
