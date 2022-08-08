@@ -3,9 +3,9 @@ import { useCartContext } from '../../Context/CartContext'
 import { Link } from 'react-router-dom';
 import ItemCart from '../ItemCart/ItemCart';
 import "./Cart.css"
-import { addDoc, collection, doc, getFirestore, serverTimestamp, updateDoc} from "firebase/firestore"
-import userEvent from '@testing-library/user-event';
+import { addDoc, collection, doc, getFirestore, serverTimestamp, updateDoc} from "firebase/firestore";
 import { db } from '../../Firebase/config';
+
 
 const Cart = () => {
 
@@ -33,11 +33,12 @@ const Cart = () => {
       const db = getFirestore();
       const ordersCollection = collection(db, 'orders');
       addDoc(ordersCollection, order)
-      .then(({ id })  => console.log(id));
-
+      .then(({ id })  => (console.log(id, "Orden de compra")));
+      
     }
 
- 
+   
+    
 
   if (cart.length === 0) {
     return(
@@ -47,6 +48,9 @@ const Cart = () => {
       </>
     )
   }
+
+
+
 
   return (
     <>
@@ -62,6 +66,7 @@ const Cart = () => {
           <input type="email" name='email' placeholder='Correo electronico'  required/>
           <input type="text" name='adress' placeholder='Dirección' required/>
           <button onClick={handClick} >Generar orden de compra</button>
+          
         </form>
       </div>
       
