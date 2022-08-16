@@ -30,6 +30,9 @@ Adjunto algunas imagenes de mi proyecto:
 
 ![Imagen lista para comprar el/los producto/s](./src/assets/capture2.png)
 
+![Formulario con ID de compra](./src/assets/capture3.png)
+
+
 `Sobre mí`
 * Venezolano, recibido de cardiopulmonar de la facultad de medicina de la UCV.
 * Estudiante actualmente de ingeniería química en la UTN - Córdoba, Argentina.

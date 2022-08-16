@@ -12,8 +12,7 @@ const ItemDetail = ({data}) => {
 
   const onAdd = (quantity) =>{
     setGoToCart (true)
-    addProduct(data, quantity)
-    console.log(`Felicidades, compraste ${quantity} unidades!`);
+    addProduct(data, quantity);
 }
 
 
@@ -26,9 +25,12 @@ const ItemDetail = ({data}) => {
                 {
                   goToCart
                   ? <Link to='/cart' className='finalizar_compra' >Finalizar compra</Link>
-                  : <ItemCount initial = {1} stock= {5} onAdd = {onAdd}/>
+                  : <ItemCount initial = {1} stock= {data.stock} onAdd = {onAdd}/>
                 }
             </div>
+            <center>
+              <Link to= '/cart'>Ir al carrito</Link>
+            </center>
         </div>
     </div>
   )

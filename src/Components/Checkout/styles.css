@@ -1,0 +1,10 @@
+.titleForm{
+    font-weight: bold;
+    padding-right: 5px;
+    align-items: center;
+}
+
+.title{
+    font-style: italic;
+    color: #054b5c;
+}
