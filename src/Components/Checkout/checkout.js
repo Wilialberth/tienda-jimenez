@@ -27,7 +27,7 @@ const Checkout = () => {
         })
             .then((res) => {
                 setOrdenId(res.id)
-                
+                ClearCart(res.id);
             })
             .catch((error) => console.log(error))       
            
